@@ -1,0 +1,82 @@
+// gaps
+
+$gap:          1.5em;
+$double-gap:   $gap * 2;
+$half-gap:     $gap / 2;
+$quarter-gap:  $gap / 4;
+$eighth-gap:   $gap / 8;
+
+
+
+// top
+
+$top: $double-gap;
+
+
+
+// colours
+
+$lighten:         10%;
+$darken:          $lighten;
+$extra-darken:    $darken * 2;
+$extra-lighten:   $lighten * 2;
+$white:           #fff;
+$black:           #000;
+$dark-grey:       lighten( $black, 25% );
+$medium-grey:     lighten( $black, 50% );
+$light-grey:      lighten( $black, 75% );
+$very-light-grey: lighten( $black, 92% );
+$blue:            #09f;
+$brown:           #b26900;
+$magenta:         #c14192;
+$turquoise:       #00928f;
+$green:           #6fb245;
+$gold:            #f7a12e;
+$body:            $white;
+$link:            $blue;
+$link-visited:    $link;
+$link-hover:      $brown;
+$link-active:     $link-hover;
+$twitter:         #39a9e0;
+$facebook:        #3b5998;
+$youtube:         #cd332d;
+$email:           #404040;
+$rss:             #ff8300;
+$pdf:             #991d29;
+
+
+
+// typography
+
+$monotype:        'consolas', monotype, sans-serif;
+$base:            82.5%; // 18px
+$line-height:     1.5;
+$base-font:       1em;
+$small-font:      0.7777777777777778em; // 14px
+$big-font:        1.333333333333333em; // 24px
+$bigger-font:     1.666666666666667em; // 30px
+$huge-font:       2em; // 36px
+$gigantic-font:   2.833333333333333em; // 51px
+$blockquote:      $big-font;
+$caption:         $small-font;
+$aside-head:      0.9444444444444444em; /* 17px */
+$aside-paragraph: $small-font;
+$normal:          300;
+$bold:            700;
+$heavy:           900;
+
+
+
+// borders
+
+$border:        2px;
+$thick-border:  3px;
+$thin-border:   1px;
+$border-colour: lighten( $black, 25% );
+
+
+
+// buttons
+
+$button-border-radius: 3px;
+$button-padding:       $quarter-gap;

@@ -1,0 +1,6 @@
+// @include button();
+
+@mixin button() {
+	border-radius: $button-border-radius;
+	padding: $button-padding;
+}

@@ -1,0 +1,435 @@
+html {
+	font-size: $base;
+}
+
+body {
+	background: $very-light-grey;
+	color: $dark-grey;
+	font-family: $monotype;
+	font-size: $base-font;
+}
+
+a {
+	color: $link;
+	font-weight: bold;
+}
+
+a:visited {
+	color: $link-visited;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link-hover;
+}
+
+a:active {
+	color: $link-active;
+}
+
+a:link:hover, a:visited:hover {
+	color: $link-hover;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: $gap;
+}
+
+h1 {
+	background: none;
+	border: none;
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+	height: 40px;
+	padding: 0 0 8px;
+	text-align: right;
+
+	#h1 {
+		font-style: normal;
+	}
+
+	.version {
+		display: block;
+	}
+
+}
+
+h2 {
+	background: transparent;
+	border: none;
+	color: $dark-grey;
+	font-size: $huge-font;
+	margin-bottom: $half-gap;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: $big-font;
+	margin-bottom: $gap;
+	text-transform: uppercase;
+}
+
+fieldset {
+	border: 1px solid #CCC;
+	margin-bottom: 8px;
+	margin-right: 4px;
+	min-height: 48px;
+	padding: 0 4px 4px;
+}
+
+fieldset div {
+	margin-top: 4px;
+}
+
+input, select, textarea {
+	border: 1px solid #CCC;
+	color: #555;
+	font: 13px Helvetica,Arial,sans-serif;
+	padding: 3px;
+}
+
+select {
+	padding: 2px;
+}
+
+textarea, .sqlarea {
+	font-family: Consolas,monospace;
+	height: 500px;
+}
+
+input[type=submit] {
+	background: #4890E7;
+	color: white;
+	cursor: pointer;
+	border: none;
+
+	@include button();
+
+}
+
+input[type=submit]:hover {
+	background-color: #006AEB;
+}
+
+input[type=image], input[type=checkbox] {
+	border: none;
+	padding: 0;
+	vertical-align: middle;
+}
+
+label input[type=checkbox], td input[type=radio], td span select {
+	margin-right: 4px;
+}
+
+fieldset select {
+	margin-right: 4px;
+}
+
+option {
+	padding: 0 5px;
+}
+
+optgroup {
+	font-size: 11px;
+}
+
+code {
+	background: #EEE;
+	font-family: Consolas,monospace;
+	padding: 2px 4px;
+}
+
+code a:hover {
+	background-color: transparent !important;
+}
+
+table {
+	border: 1px solid #D0CDC4 !important;
+	margin: $gap $gap $gap 0;
+}
+
+tbody tr:hover td, tbody tr:hover th {
+	background: #EDF4FF;
+}
+
+th, td {
+	background: inherit;
+	border: 1px dotted #CCC;
+	border-width:0 0 0 1px;
+	font-weight: normal;
+	margin: 0;
+	padding: $half-gap;
+	text-align: left;
+	vertical-align: top;
+}
+
+th:first-child, td:first-child {
+	border: 0 none;
+}
+
+.odd th, .odd td {
+	background: #FCFAF5;
+}
+
+.js .checkable .checked td, .js .checkable .checked th {
+	background: $brown;
+	color: $white;
+}
+
+thead th, thead td {
+	background: #F2EEE1;
+	font-weight: bold;
+	padding: $half-gap;
+	white-space: nowrap;
+}
+
+thead tr:hover td, thead tr:hover th,
+.js thead .checked th, .js thead .checked td {
+	background: #F2EEE1;
+}
+
+th:first-child, td:first-child {
+	white-space: nowrap;
+}
+
+td[align=right] {
+	text-align: right;
+}
+
+table code {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.hidden {
+	display: none;
+}
+
+.error, .message {
+	background: transparent;
+	font-weight: bold;
+	padding: 0;
+}
+
+.error {
+	color: #C00;
+}
+
+.message {
+	color: #090;
+}
+
+/* specific */
+
+#content {
+	height: 100%;
+	margin: 40px 0 0 300px;
+	padding: $double-gap;
+	background: $very-light-grey;
+	z-index: 1;
+
+	@include clearfix();
+
+}
+
+#content > h2:before {
+	display: block;
+	content: "";
+	color: #FF9;
+	font-size: 13px;
+	background: #333;
+	line-height: 40px;
+	margin: 0;
+	padding: 0 0 0 20px;
+	position: fixed;
+	top: 0;
+	left: 300px;
+	width: 100%;
+	height: 40px;
+
+}
+
+#content > #breadcrumb + h2:before {
+	display: none;
+}
+
+#content > p {
+	clear: left;
+}
+
+#lang {
+	background: #333;
+	color: #FFF;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 0 0 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 260px;
+}
+
+#lang select {
+	border: none;
+	background: #5F5F5F;
+	color: white;
+}
+
+#menu {
+	background: #FCFAF5;
+	border-right: 5px solid #E4E2DA;
+	bottom: 0;
+	margin: 0;
+	padding: 10px 15px;
+	position: fixed;
+	top: 40px;
+	width: 300px;
+}
+
+.links a {
+}
+
+#tables {
+	line-height: 24px;
+
+	a {
+		display: inline-block;
+	}
+
+}
+
+#menu p {
+	border: none;
+	margin: 0 0 4px;
+	padding: 0 0 4px;
+}
+
+#breadcrumb {
+	background: #333;
+	color: #FFF;
+	line-height: 40px;
+	margin: 0;
+	padding: 0 0 0 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+}
+
+#breadcrumb a {
+	color: #FF9;
+}
+
+#breadcrumb a:hover {
+	background: transparent;
+	border-color: #FF9;
+	color: #FF9;
+}
+
+#schema .table {
+	background: #F3F3F3;
+	padding: 4px 8px;
+}
+
+#logins a, #tables a {
+	background: transparent;
+}
+
+/* IE hacks */
+* + html th:first-child, * + html td:first-child {
+	border-color: inherit;
+	white-space: inherit;
+}
+
+* html #lang, * html #menu, * html #breadcrumb {
+	position: absolute;
+}
+
+* html #lang {
+	height: 30px;
+	padding-top: 10px;
+}
+
+* html form#form {
+	height: 100%;
+}
+
+#content > p.tabs + *:after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+#menu p a[href*="&select="] {
+	display: inline-block;
+	height: 24px;
+	margin-right: $half-gap;
+	overflow: hidden;
+	text-decoration: none;
+	width: 16px;
+}
+
+#menu p a[href*="&select="]:before {
+	content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHISURBVDjLpVPNK0RRFP+9D98syMwUspHkm9I0YkFZWBFKkZ0s7a3Ewh+ilChK7FgoZCJFKYlYKB8zk2+Z5t0P577He29kQU7dd+6575zf+d1zztWklPiPmOozt/U4SThjXIoyIQS4AJjSXO0lGGlvcXAm6Vzsz4xUhm0AIeX4QLig+C+ZpxbOG1wGhGYHr1zMUmZGWRgs0ha3PE1nX/8mWmdgWTzLB+DUYbhm9FfZ35IEyrhXA3VXJfPbsV8B9LQUIeUHYJ8ASobag1jcucNgW8g9W4reYSDi2YnnZDoDiwCokDANct6NwTB0LEdj0HRA/wxa2SN25JNBEdWluUhZ366gqmAaGvrCAXKOozccTGPgt8+vn8GYSGcgyTYp3dpBnBg42nbQPRBTo5bTvqYkmxL6AQhNTWQGBXY3B7BxlEBXozcW64dxRKoKUZBju+P06gl5WaaviMJBM3TNDlbypemIZgHYOnlwASsCmW7nHADGnBoQ3c76YmweJ9BR5zFYjsbRHwm4tmJg6PhWA7pCXXk+bu7fURHKweXtq/sWaksz7SC/CCGFrwtyZ3r+rCnFRZ7qr1qc6mLZj4f9OEyPL8lVpbX/PucPv5QPKHB1TdEAAAAASUVORK5CYII=");
+	display: inline-block;
+	padding-top: 8px;
+}
+
+#content p a[href*="&select="] {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHISURBVDjLpVPNK0RRFP+9D98syMwUspHkm9I0YkFZWBFKkZ0s7a3Ewh+ilChK7FgoZCJFKYlYKB8zk2+Z5t0P577He29kQU7dd+6575zf+d1zztWklPiPmOozt/U4SThjXIoyIQS4AJjSXO0lGGlvcXAm6Vzsz4xUhm0AIeX4QLig+C+ZpxbOG1wGhGYHr1zMUmZGWRgs0ha3PE1nX/8mWmdgWTzLB+DUYbhm9FfZ35IEyrhXA3VXJfPbsV8B9LQUIeUHYJ8ASobag1jcucNgW8g9W4reYSDi2YnnZDoDiwCokDANct6NwTB0LEdj0HRA/wxa2SN25JNBEdWluUhZ366gqmAaGvrCAXKOozccTGPgt8+vn8GYSGcgyTYp3dpBnBg42nbQPRBTo5bTvqYkmxL6AQhNTWQGBXY3B7BxlEBXozcW64dxRKoKUZBju+P06gl5WaaviMJBM3TNDlbypemIZgHYOnlwASsCmW7nHADGnBoQ3c76YmweJ9BR5zFYjsbRHwm4tmJg6PhWA7pCXXk+bu7fURHKweXtq/sWaksz7SC/CCGFrwtyZ3r+rCnFRZ7qr1qc6mLZj4f9OEyPL8lVpbX/PucPv5QPKHB1TdEAAAAASUVORK5CYII=") no-repeat scroll 2px center;
+	padding-left: 22px;
+}
+
+#content p a[href*="&edit="] {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJvSURBVDjLpZPrS5NhGIf9W7YvBYOkhlkoqCklWChv2WyKik7blnNris72bi6dus0DLZ0TDxW1odtopDs4D8MDZuLU0kXq61CijSIIasOvv94VTUfLiB74fXngup7nvrnvJABJ/5PfLnTTdcwOj4RsdYmo5glBWP6iOtzwvIKSWstI0Wgx80SBblpKtE9KQs/We7EaWoT/8wbWP61gMmCH0lMDvokT4j25TiQU/ITFkek9Ow6+7WH2gwsmahCPdwyw75uw9HEO2gUZSkfyI9zBPCJOoJ2SMmg46N61YO/rNoa39Xi41oFuXysMfh36/Fp0b7bAfWAH6RGi0HglWNCbzYgJaFjRv6zGuy+b9It96N3SQvNKiV9HvSaDfFEIxXItnPs23BzJQd6DDEVM0OKsoVwBG/1VMzpXVWhbkUM2K4oJBDYuGmbKIJ0qxsAbHfRLzbjcnUbFBIpx/qH3vQv9b3U03IQ/HfFkERTzfFj8w8jSpR7GBE123uFEYAzaDRIqX/2JAtJbDat/COkd7CNBva2cMvq0MGxp0PRSCPF8BXjWG3FgNHc9XPT71Ojy3sMFdfJRCeKxEsVtKwFHwALZfCUk3tIfNR8XiJwc1LmL4dg141JPKtj3WUdNFJqLGFVPC4OkR4BxajTWsChY64wmCnMxsWPCHcutKBxMVp5mxA1S+aMComToaqTRUQknLTH62kHOVEE+VQnjahscNCy0cMBWsSI0TCQcZc5ALkEYckL5A5noWSBhfm2AecMAjbcRWV0pUTh0HE64TNf0mczcnnQyu/MilaFJCae1nw2fbz1DnVOxyGTlKeZft/Ff8x1BRssfACjTwQAAAABJRU5ErkJggg==") no-repeat scroll 2px center;
+	padding-left: 22px;
+}
+
+table tbody input[type="checkbox"] {
+	display: block;
+	float: left;
+}
+
+table a[href*="&edit="][href*="&where"] {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFUSURBVDjLrZM/SAJxGIZdWwuDlnCplkAEm1zkaIiGFFpyMIwGK5KGoK2lphDKkMDg3LLUSIJsSKhIi+684CokOtTiMizCGuzEU5K3vOEgKvtBDe/2Pc8H3x8NAM1fQlx4H9M3pcOWp6TXWmM8A7j0629v1nraiAVC0IrrwATKIgs5xyG5QiE+Z4iQdoeU2oAsnqCSO1NSTu+D9VhqRLD8nIB8F0Q2MgmJDyipCzjvYJkIfpN2UBLG8MpP4dxvQ3ZzGuyyBQ2H+AnOOCBd9aL6soh81A5hyYSGWyCFvxUcerqI4S+CvYVOFPMHxLAq8I3qdHVY5LbBhJzEsCrwutpRFBlUHy6wO2tEYtWAzLELPN2P03kjfj3luqDycV2F8AgefWbEnVqEHa2IznSD6BdsVDNStB0lfh0FPoQjdx8RrAqGzC0YprSgxzsUMOY2bf37N/6Ud1Vc9yYcH50CAAAAAElFTkSuQmCC") no-repeat scroll right center;
+	padding-right: 18px;
+}
+
+table input + a[href*="&edit="][href*="&where"] {
+	clear: right;
+	display: block;
+	float: left;
+	line-height: 15px;
+	margin-right: 8px;
+	overflow: hidden;
+	padding: 0;
+	text-decoration: none;
+	width: 16px;
+}
+
+table input + a[href*="&edit="][href*="&where"]:before {
+	content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFUSURBVDjLrZM/SAJxGIZdWwuDlnCplkAEm1zkaIiGFFpyMIwGK5KGoK2lphDKkMDg3LLUSIJsSKhIi+684CokOtTiMizCGuzEU5K3vOEgKvtBDe/2Pc8H3x8NAM1fQlx4H9M3pcOWp6TXWmM8A7j0629v1nraiAVC0IrrwATKIgs5xyG5QiE+Z4iQdoeU2oAsnqCSO1NSTu+D9VhqRLD8nIB8F0Q2MgmJDyipCzjvYJkIfpN2UBLG8MpP4dxvQ3ZzGuyyBQ2H+AnOOCBd9aL6soh81A5hyYSGWyCFvxUcerqI4S+CvYVOFPMHxLAq8I3qdHVY5LbBhJzEsCrwutpRFBlUHy6wO2tEYtWAzLELPN2P03kjfj3luqDycV2F8AgefWbEnVqEHa2IznSD6BdsVDNStB0lfh0FPoQjdx8RrAqGzC0YprSgxzsUMOY2bf37N/6Ud1Vc9yYcH50CAAAAAElFTkSuQmCC");
+	padding-right: 5px;
+}
+
+table input + a[href*="&edit="][href*="&where"]:hover {
+	background: #FFC;
+	color: white;
+	margin-left: 19px;
+	margin-top: -1px;
+	overflow: visible;
+	padding: 1px 2px;
+	position: absolute;
+	width: auto;
+}
+
+#logout {
+	background-color: $medium-grey;
+	margin-right: 16px;
+
+	@include button();
+
+}

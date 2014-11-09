@@ -1,0 +1,43 @@
+/*
+	=========
+	= reset =
+	=========
+*/
+
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend,
+textarea, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+ol, ul {
+	list-style: none outside none;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
