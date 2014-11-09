@@ -5,7 +5,7 @@ css_dir = "."
 sass_dir = "sass"
 
 # :expanded, :nested, :compact or :compressed
-output_style = :compressed
+output_style = :compact
 
 relative_assets = true
 
