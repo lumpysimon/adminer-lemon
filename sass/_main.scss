@@ -100,17 +100,21 @@ textarea, .sqlarea {
 }
 
 input[type=submit] {
-	background: #4890E7;
-	color: white;
+	background-color: $link;
+	color: $white;
 	cursor: pointer;
 	border: none;
 
 	@include button();
 
+	&[name="drop"] {
+		background-color: $red;
+	}
+
 }
 
 input[type=submit]:hover {
-	background-color: #006AEB;
+	background-color: $link-hover;
 }
 
 input[type=image], input[type=checkbox] {
@@ -151,7 +155,7 @@ table {
 }
 
 tbody tr:hover td, tbody tr:hover th {
-	background: #EDF4FF;
+	background: lighten( $link-hover, $extra-lighten );
 }
 
 th, td {
@@ -173,9 +177,8 @@ th:first-child, td:first-child {
 	background: #FCFAF5;
 }
 
-.js .checkable .checked td, .js .checkable .checked th {
-	background: $brown;
-	color: $white;
+.js .checkable .checked th, .js .checkable .checked td {
+	background: lighten( $green, $extra-lighten );
 }
 
 thead th, thead td {
