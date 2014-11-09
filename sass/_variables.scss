@@ -2,6 +2,7 @@
 
 $gap:          1.5em;
 $double-gap:   $gap * 2;
+$triple-gap:   $gap * 3;
 $half-gap:     $gap / 2;
 $quarter-gap:  $gap / 4;
 $eighth-gap:   $gap / 8;
@@ -10,7 +11,7 @@ $eighth-gap:   $gap / 8;
 
 // top
 
-$top: $double-gap;
+$top-height: $triple-gap;
 
 
 
@@ -34,6 +35,9 @@ $link:            $blue;
 $link-visited:    $link;
 $link-hover:      $green;
 $link-active:     $link-hover;
+$border:          $light-grey;
+$inner-border:    $very-light-grey;
+$top:             $dark-grey;
 
 
 
@@ -53,7 +57,13 @@ $bold:            bold;
 
 
 
+// borders
+
+$border-radius: 3px;
+
+
+
 // buttons
 
 $button-border-radius: 3px;
-$button-padding:       $quarter-gap;
+$button-padding:       $half-gap;
