@@ -31,18 +31,11 @@ $brown:           #b26900;
 $magenta:         #c14192;
 $turquoise:       #00928f;
 $green:           #6fb245;
-$gold:            #f7a12e;
-$body:            $white;
+$body:            $very-light-grey;
 $link:            $blue;
 $link-visited:    $link;
 $link-hover:      $brown;
 $link-active:     $link-hover;
-$twitter:         #39a9e0;
-$facebook:        #3b5998;
-$youtube:         #cd332d;
-$email:           #404040;
-$rss:             #ff8300;
-$pdf:             #991d29;
 
 
 
@@ -57,22 +50,8 @@ $big-font:        1.333333333333333em; // 24px
 $bigger-font:     1.666666666666667em; // 30px
 $huge-font:       2em; // 36px
 $gigantic-font:   2.833333333333333em; // 51px
-$blockquote:      $big-font;
-$caption:         $small-font;
-$aside-head:      0.9444444444444444em; /* 17px */
-$aside-paragraph: $small-font;
-$normal:          300;
-$bold:            700;
-$heavy:           900;
-
-
-
-// borders
-
-$border:        2px;
-$thick-border:  3px;
-$thin-border:   1px;
-$border-colour: lighten( $black, 25% );
+$normal:          normal;
+$bold:            bold;
 
 
 
